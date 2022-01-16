@@ -17,10 +17,11 @@ Tools:
 
 ### Setup
 
-1. Create a cloud server with an open SSH port with login credentials as found in `passwords.txt`.
+1. Create a cloud server with an open SSH port and with login credentials as found in `passwords.txt`.
 2. Run a website off of the cloud server.
 3. Load a box with Kali linux and connect it to the internet.
 4. Load a USB stick with the cloud server login credentials and encrypt the file with the credentials found in `passwords.txt`.
+5. Put the Kali box and USB stick in the room of the "nefarios hacker" described below.
 
 ### Scenario
 
