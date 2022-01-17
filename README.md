@@ -20,20 +20,21 @@ Tools:
 1. Create a cloud server with an open SSH port and with login credentials as found in `passwords.txt`.
 2. Run a website off of the cloud server.
 3. Load a box with Kali linux and connect it to the internet.
-4. Load a USB stick with the cloud server login credentials and encrypt the file with the credentials found in `passwords.txt`.
-5. Put the Kali box and USB stick in the room of the "nefarios hacker" described below.
+4. Load a USB stick with the cloud server login credentials and location of the second weapons create.
+5. Encrypt the file with the credentials found in `passwords.txt`.
+6. Put the Kali box and USB stick in Hexfall HQ as described below.
+7. Possible darknet stuff here.
 
 ### Scenario
 
 Team is briefed with the following:
 
-    Intel has located a nefarious hacker is a nearby facility, known only as TheLegend27. He and his associates are well armed, proceed with caution. He has recently started running a website filled with top secret information that is critical to national security. He and his hacking group have recently announced they plan to post a large addition to this website within the coming hours.
-    You must stop him before he updates his website with this additional data.
-    Additionally, it is believed he have a small infrastructure of computers. But due to the sensitive nature of the equipment, it cannot be moved. Therefore, you will be tasked with taking his website offline at his evil hacker lair.
+    Intel has located a nefarious hacking group, known only as Hexfall, in a nearby facility. Hexfall was brought to the the governments attention after they opened an online weapons marketplace. Due to increasing demand of black market guns, the store is shipping thousands of dollars worth of weapons daily. It is believed they have two crates of weapons onsite. You are being tasked with taking down the operation. You must take down the online weapon marketplace and take control of both weapons crates.
+    Additionally, it is believed Hexfall has a small infrastructure of computers. But, due to the sensitive nature of the equipment, it cannot be moved. Therefore, you will be tasked with taking Hexfall's website offline on location.
 
-    To do this it is believed he has a flash drive where he stores the passwords to all his computers. You must obtain the flash drive, get his password, and take down his remote server.
+    To do this it is believed Hexfall has a flash drive where they store the passwords to all their computers. You must obtain the flash drive, get the passwords, and take down the remote server.
 
-    Your mission is complete when you take down his website.
+    Your mission is complete when you take down the Hexfall website and take control of both weapons crates.
 
     Below is a list of helpful guides a technical specialist has prepared for you:
     Crack a password protected file: https://linuxconfig.org/how-to-crack-zip-password-on-kali-linux
@@ -42,3 +43,13 @@ Team is briefed with the following:
 Password options:
 elemen - for drive
 element - for pi ssh
+
+### Opfor Guidance
+
+Provide moderate resistance in Hexfall HQ shootout.
+
+Provide mild attacks during hacking campaign.
+
+Provide moderate resistance at second crate point.
+
+Provide mild resistance during evacuation.
