@@ -1,0 +1,46 @@
+/*----Media Queries-----*/
+@media only screen and (max-width: 1024px) {
+	.container{ 
+		width: 85%; 
+	}
+}
+@media only screen and (max-width: 896px) {
+	#main-content ul li {
+		width: 30%;	
+	}
+}
+@media only screen and (max-width: 730px) {
+	.site-detail {
+		float: none;
+		margin-bottom: 20px;
+		text-align: center
+	}
+	.top-nav {
+		float: none;
+		text-align: center
+	}
+}
+@media only screen and (max-width: 394px) {
+	#mastfoot p {
+		font-size: 10px;
+	}
+	#mastfoot ul li {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 368px) {
+	h1 {
+		font-size: 25px;
+	}	
+	#main-content ul li {
+		width: 45%;	
+	}
+}
+@media only screen and (max-width: 299px) {	
+	h1 {
+		font-size: 20px;
+	}	
+	.top-nav ul li {
+		margin-right: 10px;
+	}
+}

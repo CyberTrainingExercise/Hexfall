@@ -1,0 +1,151 @@
+/***
+Theme Name: Insert Order Number or Sitename here  
+Description: 
+Version: 1 
+***/
+
+/*** Reset ***/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { background: transparent; border: 0; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+ol,ul { list-style: none; }
+blockquote,q { quotes: none; }
+blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none; }
+:focus { outline: 0; }
+img { vertical-align: bottom; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*** 
+Clearfix 
+***/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: "."; clear: both; height: 0; }
+.clear { clear: both; }
+
+/*** 
+Positioning and Alignment 
+***/
+.fl { float: left; }
+.fr { float: right; }
+.txt-left { text-align: left; }
+.txt-right { text-align: right; }
+.txt-center { text-align: center; }
+
+/*** 
+General Settings 
+***/
+body { background: #fff; color: #000; font-family: Helvetica, Arial, sans-serif; font-size: 12px; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; margin-bottom: 15px; }
+p { margin: 0 0 15px 0; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/***
+Container
+***/
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/***
+Typography
+***/
+
+h1 {
+	font-size: 30px;
+	text-decoration: underline;
+}
+h4 {
+	font-size: 12px;
+}
+
+/***
+Header
+***/
+#masthead { 
+	border-bottom: 2px solid #f5f5f5;
+	padding: 35px 0px 65px 0px;
+}
+.site-detail {
+	display: block;
+	float: left;
+	margin: 0px;
+}
+.site-title {
+	margin: 0px;
+	text-decoration: none;
+}
+.site-title a, .site-description a {
+	color: #000;
+}
+.site-description {
+	margin: 0px;
+}
+.top-nav {
+	float: right;
+}
+.top-nav ul li {
+	display: inline;
+	margin-right: 35px;
+}
+.top-nav ul li .last {
+	margin-right: 0px;
+}
+.top-nav ul li a {
+	color: #000;
+	font-size: 14px;
+	text-decoration: none;
+}
+.top-nav ul li a:hover, .top-nav li.current a {
+	border-bottom: 2px solid;	
+	color: #000;
+	text-decoration: none;
+}
+
+/***
+Main Content
+***/
+#main-content {
+	border-bottom: 2px solid #f5f5f5;
+	padding: 50px 0px 50px 0px;
+}
+#main-content ul li {
+	display: block;
+	float: left;
+	margin: 10px 10px 0px 0px;
+	width: 32%;
+}
+#main-content ul li .last {
+	margin-right: 0px;
+}
+#main-content  img {
+	width: 100%;
+	opacity: 1;
+    filter: alpha(opacity=40);
+}
+#main-content img:hover {
+	opacity: 0.5;
+    filter: alpha(opacity=100);
+}
+
+/***
+Footer
+***/
+
+#mastfoot {
+	padding: 50px 0px 30px 0px;
+}
+#mastfoot a {
+	color: #000;	
+}
+.bottom-nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+/***
+About - Specifics
+***/
+#main-content p {
+	font-size: 15px;
+}
