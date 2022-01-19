@@ -11,9 +11,9 @@ Technical Objectives:
 3. Intro to SSH
 
 Tools:
-1. Kali linux box with John the Ripper
-2. USB with encrypted password of server
-3. Headless server running linux with SSH port open
+1. Kali linux box
+2. USB
+3. Headless server with SSH port open
 
 ### Setup
 
@@ -29,7 +29,8 @@ Tools:
 
 Team is briefed with the following:
 
-    Intel has located a nefarious hacking group, known only as Hexfall, in a nearby facility. Hexfall was brought to the the governments attention after they opened an online weapons marketplace. Due to increasing demand of black market guns, the store is shipping thousands of dollars worth of weapons daily. It is believed they have two crates of weapons onsite. You are being tasked with taking down the operation. You must take down the online weapon marketplace and take control of both weapons crates.
+    Intel has located a nefarious hacking group, known only as Hexfall, in a nearby facility. Hexfall was brought to the the governments attention after they opened an online weapons marketplace. Due to increasing demand of black market guns, the store is shipping thousands of dollars worth of weapons daily. It is believed they have two crates of weapons onsite as well as the hardware to run their own online weapons marketplace. You are being tasked with taking down the operation. You must take down the online weapon marketplace and take control of both weapons crates.
+    
     Additionally, it is believed Hexfall has a small infrastructure of computers. But, due to the sensitive nature of the equipment, it cannot be moved. Therefore, you will be tasked with taking Hexfall's website offline on location.
 
     To do this it is believed Hexfall has a flash drive where they store the passwords to all their computers. You must obtain the flash drive, get the passwords, and take down the remote server.
