@@ -30,7 +30,7 @@ Tools:
 Team is briefed with the following:
 
     Intel has located a nefarious hacking group, known only as Hexfall, in a nearby facility. Hexfall was brought to the the governments attention after they opened an online weapons marketplace. Due to increasing demand of black market guns, the store is shipping thousands of dollars worth of weapons daily. It is believed they have two crates of weapons onsite as well as the hardware to run their own online weapons marketplace. You are being tasked with taking down the operation. You must take down the online weapon marketplace and take control of both weapons crates.
-    
+
     Additionally, it is believed Hexfall has a small infrastructure of computers. But, due to the sensitive nature of the equipment, it cannot be moved. Therefore, you will be tasked with taking Hexfall's website offline on location.
 
     To do this it is believed Hexfall has a flash drive where they store the passwords to all their computers. You must obtain the flash drive, get the passwords, and take down the remote server.
@@ -40,10 +40,6 @@ Team is briefed with the following:
     Below is a list of helpful guides a technical specialist has prepared for you:
     Crack a password protected file: https://linuxconfig.org/how-to-crack-zip-password-on-kali-linux
     Guide on how to SSH into a remote server: https://linuxconfig.org/Ssh
-    
-Password options:
-elemen - for drive
-element - for pi ssh
 
 ### Opfor Guidance
 
