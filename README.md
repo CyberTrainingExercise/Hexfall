@@ -37,7 +37,9 @@ Team is briefed with the following:
 
     Your mission is complete when you take down the Hexfall website and take control of both weapons crates.
 
-    Below is a list of helpful guides a technical specialist has prepared for you:
+    Below is a list of helpful guides a technical specialist has prepared for you.
+
+Print out the following and hand the useful information to them:
     Crack a password protected file: https://linuxconfig.org/how-to-crack-zip-password-on-kali-linux
     Guide on how to SSH into a remote server: https://linuxconfig.org/Ssh
 
