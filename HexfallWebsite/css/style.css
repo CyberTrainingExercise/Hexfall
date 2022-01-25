@@ -33,7 +33,7 @@ Positioning and Alignment
 /*** 
 General Settings 
 ***/
-body { background: #fff; color: #000; font-family: Helvetica, Arial, sans-serif; font-size: 12px; }
+body { background: #000; color: #fff; font-family: Helvetica, Arial, sans-serif; font-size: 12px; }
 h1,h2,h3,h4,h5,h6 { font-weight: normal; margin-bottom: 15px; }
 p { margin: 0 0 15px 0; }
 a { text-decoration: none; }
@@ -76,7 +76,7 @@ Header
 	text-decoration: none;
 }
 .site-title a, .site-description a {
-	color: #000;
+	color: #fff;
 }
 .site-description {
 	margin: 0px;
@@ -92,13 +92,13 @@ Header
 	margin-right: 0px;
 }
 .top-nav ul li a {
-	color: #000;
+	color: #fff;
 	font-size: 14px;
 	text-decoration: none;
 }
 .top-nav ul li a:hover, .top-nav li.current a {
 	border-bottom: 2px solid;	
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -136,7 +136,7 @@ Footer
 	padding: 50px 0px 30px 0px;
 }
 #mastfoot a {
-	color: #000;	
+	color: #fff;	
 }
 .bottom-nav ul li {
 	display: inline;
