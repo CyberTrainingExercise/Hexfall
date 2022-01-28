@@ -19,6 +19,10 @@ Tools:
 
 1. Create a cloud server with an open SSH port and with login credentials as found in `passwords.txt`.
 2. Run a website off of the cloud server.
+    - For this use tor and run a hidden service.
+    - See: https://www.youtube.com/watch?v=GVMjk9pj2Cw for instructions on how to run a hidden service.
+    - Use `python3 -m http.server --bind 127.0.0.1 8080`
+    - Store url in `url.txt`
 3. Load a box with Kali linux and connect it to the internet.
 4. Load a USB stick with the cloud server login credentials and location of the second weapons create.
 5. Encrypt the file with the credentials found in `passwords.txt`.
