@@ -12,8 +12,9 @@ Technical Objectives:
 
 Tools:
 1. Kali linux box
-2. USB
+2. USB stick
 3. Headless server with SSH port open
+4. Optional: RGB lights
 
 ### Setup
 
@@ -22,6 +23,7 @@ Tools:
     - For this use tor and run a hidden service.
     - See: https://www.youtube.com/watch?v=GVMjk9pj2Cw for instructions on how to run a hidden service.
     - Use `python3 -m http.server --bind 127.0.0.1 8080`
+    - If you would like to include the server to run on boot, edit `/etc/rc.local` with `python3 -m http.server --directory /home/pi/Desktop/HexfallWebsite --bind 127.0.0.1 8080 &`
     - Store url in `url.txt`
 3. Load a box with Kali linux and connect it to the internet.
 4. Load a USB stick with the cloud server login credentials and location of the second weapons create.
@@ -37,15 +39,19 @@ Team is briefed with the following:
 
     Additionally, it is believed Hexfall has a small infrastructure of computers. But, due to the sensitive nature of their network, it cannot be moved until the website is disabled. Therefore, you will be tasked with taking Hexfall's website offline on location.
 
-    To do this it is believed Hexfall has a flash drive where they store the passwords to all their computers. You must obtain the flash drive, get the passwords, and take down the remote server.
+    To do this it is believed Hexfall's lead hacker has a flash drive where he stores the passwords to all their computers. You must obtain the flash drive, get the passwords, login to the remote server, and takedown the website.
 
     Your mission is complete when you take down the Hexfall website and take control of both weapons crates.
 
     Below is a list of helpful guides a technical specialist has prepared for you.
 
 Print out the following and hand the useful information to them:
-    Crack a password protected file: https://linuxconfig.org/how-to-crack-zip-password-on-kali-linux
-    Guide on how to SSH into a remote server: https://linuxconfig.org/Ssh
+
+1. Crack a password protected file: https://linuxconfig.org/how-to-crack-zip-password-on-kali-linux
+
+2. Guide on how to SSH into a remote server: https://linuxconfig.org/Ssh
+
+3. Shutting down the server: `systemctl -poweroff`
 
 ### Opfor Guidance
 
@@ -56,3 +62,12 @@ Provide mild attacks during hacking campaign.
 Provide moderate resistance at second crate point.
 
 Provide mild resistance during evacuation.
+
+### Onsite Setup
+1. Plug in Pi
+2. Verify website is runing, see `url.txt.` for site url
+3. Verify Pi IP address, ssh into `pi@hexfallserver.student.rit.edu`
+4. Get IP address
+5. Load onto zip file `zip -e secret_files.zip file1.txt`
+6. Setup Kali box and lights
+7. Setup presentation and have print outs ready
