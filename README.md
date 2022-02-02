@@ -1,9 +1,11 @@
-# CTX0
+# CTX0 - Operation Hexfall
 
 ### Objectives
 
 For: POC
-Time: 20-30 mins
+Time: 35 mins
+ - 5 for planning
+ - 30 for execution
 
 Technical Objectives:
 1. Intro to Kali Linux
