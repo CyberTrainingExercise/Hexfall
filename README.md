@@ -17,8 +17,8 @@ The CTX admin, whoever is administering it, will be tasked with augmenting it to
 ### Objectives
 
 For: POC
-Time: 35 mins
- - 5 for planning
+Time: 37 mins
+ - 7 for planning
  - 30 for execution
 
 Technical Objectives:
@@ -30,7 +30,7 @@ Tools:
 1. Kali linux box
 2. USB stick
 3. Headless server with SSH port open
-4. Optional: RGB lights
+4. Optional: LED lights
 
 ### Setup
 
@@ -45,7 +45,7 @@ Tools:
     - See: https://www.kali.org/
 4. Load a USB stick with the cloud server login credentials and location of the second weapons create (see step 8).
 5. Encrypt the file with the credentials found in `passwords.txt`.
-    - Use `zip -e secret_files.zip passwords.txt`
+    - Use `zip -e secret_files.zip data.txt`
     - The password `elemen` is a good option as it takes John The Ripper about a minute to process (depending on hardware).
 6. Put the Kali box and USB stick in Hexfall HQ as described below.
 7. Put a weapons crate in the Hexfall HQ.
@@ -88,10 +88,10 @@ Provide moderate resistance at second crate point.
 Provide mild resistance during evacuation.
 
 ### Onsite Setup
-1. Plug in Pi
+1. Plug in Server
 2. Verify website is runing, see `url.txt.` for site url
-3. Verify Pi IP address, ssh into `pi@hexfallserver.student.rit.edu`
+3. Verify Server IP address, ssh into `pi@hexfallserver.student.rit.edu`
 4. Get IP address
-5. Load IP address and Weapons crate location onto zip file `zip -e secret_files.zip file1.txt`
+5. Load IP address and weapon crate (#2) location onto zip file `zip -e secret_files.zip file1.txt`
 6. Setup Kali box and optional LED lights
 7. Setup presentation and have print outs ready
