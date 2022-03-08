@@ -69,7 +69,9 @@ Tools:
 8. Put a weapons crate in a secret secondary location.
     - Record this location and put it into the `secret_files.zip` in step 5.
 9. Update presentation in `Presentation/` with details for your specific scenario.
-10. Execute training exercise!
+10. Print out print outs found in `PrintOuts/`
+    - You do not need all the pages, but read them over and select which ones you think the cadets would need. For example, the `HowToCrackPasswords` document should only need to be page 5.
+11. Execute training exercise!
     - See section `Onsite Setup` below for more details.
 
 ### Scenario
