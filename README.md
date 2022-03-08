@@ -9,7 +9,7 @@ If you would like to perform this CTX you will need the following:
 1. Someone who is technically skilled to setup the scenario.
     - Hopefully this guide will make it easy, but you still need technical know how to do it.
 2. The following equipment:
-    - FTX simulation equipment such as nerf guns or rubber duckies.
+    - FTX simulation equipment such as rubber duckies.
     - A computer or virtual machine.
     - A USB stick.
     - A headless server.
@@ -46,7 +46,7 @@ Tools:
 2. USB stick
 3. Headless server with SSH port open
 4. Optional: LED lights
-5. Optional: a phone with the tor browser installed.
+5. Optional: a phone with the tor browser installed
     - You can find other ways to have them verify the website is up and running, but this is the recommended way
 
 ### Setup
