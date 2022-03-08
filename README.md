@@ -1,8 +1,21 @@
 # CTX0 - Operation Hexfall
 
-### Expected Design
+Welcome to Operation Hexfall, a Cyber Training Exercise (CTX) designed for AFROTC cadets.
 
-This Cyber Training Exercise (CTX) was designed to test cadets for leadership competencies in a high intensity simulation. This simulation will be carried out in both the land domain and in the cyber domain.
+This CTX was designed to test cadets for leadership competencies in a high intensity simulation. This simulation will be carried out in both the land domain and in the cyber domain.
+
+If you would like to perform this CTX you will need the following:
+
+1. Someone who is technically skilled to setup the scenario.
+    - Hopefully this guide will make it easy, but you still need technical know how to do it.
+2. The following equipment:
+    - FTX simulation equipment such as nerf guns or rubber duckies.
+    - A computer or virtual machine.
+    - A USB stick.
+    - A headless server.
+    - Optional: a phone with the tor browser installed.
+
+### Expected Design
 
 The CTX is designed such that the leader will have to balance both domains simultaneously. The land domain will have sporadic action while the cyber domain will remain more stable, with one main path to completion.
 
@@ -13,6 +26,8 @@ The CTX admin, whoever is administering it, will be tasked with augmenting it to
 2. The land domain should be sporadic, incorporate additional measures to challenge them constantly.
     - An example of a way to do this is adding to the Rules of Engagement (ROEs): "You must take all causualties back to base to perform any medical treatment." This forces the cadets out of the safety of the newly captured enemy base. This will give more opportunity for OPFOR to attack and will also create a more dynamic and stressful situation.
     - Another example would be to turn off the lights in the Hexfall HQ (and add an ROE so they can't turn them back on). This forces them to act in low light and increases the enviromental stressors.
+
+Augment the scenario as you see fit.
 
 ### Objectives
 
@@ -31,6 +46,8 @@ Tools:
 2. USB stick
 3. Headless server with SSH port open
 4. Optional: LED lights
+5. Optional: a phone with the tor browser installed.
+    - You can find other ways to have them verify the website is up and running, but this is the recommended way
 
 ### Setup
 
@@ -94,4 +111,6 @@ Provide mild resistance during evacuation.
 4. Get IP address
 5. Load IP address and weapon crate (#2) location onto zip file `zip -e secret_files.zip file1.txt`
 6. Setup Kali box and optional LED lights
-7. Setup presentation and have print outs ready
+7. Setup presentation and have print outs (and optionally: phone) ready
+8. Present presentation
+9. Hand out print outs and optionally the phone with tor browser installed
