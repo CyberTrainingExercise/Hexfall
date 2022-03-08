@@ -1,5 +1,19 @@
 # CTX0 - Operation Hexfall
 
+### Expected Design
+
+This Cyber Training Exercise (CTX) was designed to test cadets for leadership competencies in a high intensity simulation. This simulation will be carried out in both the land domain and in the cyber domain.
+
+The CTX is designed such that the leader will have to balance both domains simultaneously. The land domain will have sporadic action while the cyber domain will remain more stable, with one main path to completion.
+
+The CTX admin, whoever is administering it, will be tasked with augmenting it to fit their specific location. The situtational diagram found in `SituationalDiagram_Det538` is designed specifically for Detachment 538 and their available space. When you augment the scenario, please keep the following in mind:
+
+1. The cyber domain should be as easy to complete as possible, while still retaining the wow factor of taking down a darknet website.
+    - Let them feel like they're flying, but make sure they don't crash
+2. The land domain should be sporadic, incorporate additional measures to challenge them constantly.
+    - An example of a way to do this is adding to the Rules of Engagement (ROEs): "You must take all causualties back to base to perform any medical treatment." This forces the cadets out of the safety of the newly captured enemy base. This will give more opportunity for OPFOR to attack and will also create a more dynamic and stressful situation.
+    - Another example would be to turn off the lights in the Hexfall HQ (and add an ROE so they can't turn them back on). This forces them to act in low light and increases the enviromental stressors.
+
 ### Objectives
 
 For: POC
@@ -24,18 +38,26 @@ Tools:
 2. Run a website off of the cloud server.
     - For this use tor and run a hidden service.
     - See: https://www.youtube.com/watch?v=GVMjk9pj2Cw for instructions on how to run a hidden service.
-    - Use `python3 -m http.server --bind 127.0.0.1 8080`
+    - Use `python3 -m http.server --bind 127.0.0.1 8080` to run the web server
     - If you would like to include the server to run on boot, edit `/etc/rc.local` with `python3 -m http.server --directory /home/pi/Desktop/HexfallWebsite --bind 127.0.0.1 8080 &`
-    - Store url in `url.txt`
+    - Store url to hidden service in `url.txt`
 3. Load a box with Kali linux and connect it to the internet.
-4. Load a USB stick with the cloud server login credentials and location of the second weapons create.
+    - See: https://www.kali.org/
+4. Load a USB stick with the cloud server login credentials and location of the second weapons create (see step 8).
 5. Encrypt the file with the credentials found in `passwords.txt`.
+    - Use `zip -e secret_files.zip passwords.txt`
+    - The password `elemen` is a good option as it takes John The Ripper about a minute to process (depending on hardware).
 6. Put the Kali box and USB stick in Hexfall HQ as described below.
-7. Possible darknet stuff here.
+7. Put a weapons crate in the Hexfall HQ.
+8. Put a weapons crate in a secret secondary location.
+    - Record this location and put it into the `secret_files.zip` in step 5.
+9. Update presentation in `Presentation/` with details for your specific scenario.
+10. Execute training exercise!
+    - See section `Onsite Setup` below for more details.
 
 ### Scenario
 
-Team is briefed with the following:
+Team is briefed with the following or using the presentation found in `Presentation/`':
 
     Intel has located a nefarious hacking group, known only as Hexfall, in a nearby facility. Hexfall was brought to the the governments attention after they opened an online weapons marketplace. Due to increasing demand of black market guns, the store is shipping thousands of dollars worth of weapons daily. It is believed they have two crates of weapons onsite as well as the hardware to run their own online weapons marketplace. You are being tasked with taking down the operation. You must take down the online weapon marketplace and take control of both weapons crates.
 
@@ -70,6 +92,6 @@ Provide mild resistance during evacuation.
 2. Verify website is runing, see `url.txt.` for site url
 3. Verify Pi IP address, ssh into `pi@hexfallserver.student.rit.edu`
 4. Get IP address
-5. Load onto zip file `zip -e secret_files.zip file1.txt`
-6. Setup Kali box and lights
+5. Load IP address and Weapons crate location onto zip file `zip -e secret_files.zip file1.txt`
+6. Setup Kali box and optional LED lights
 7. Setup presentation and have print outs ready
