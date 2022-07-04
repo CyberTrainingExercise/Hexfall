@@ -51,8 +51,6 @@ Team is briefed with the following or using the presentation found in `Presentat
 
     Intel has located a nefarious hacking group, known only as Hexfall, in a nearby facility. Hexfall was brought to the the governments attention after they opened an online weapons marketplace. Due to increasing demand of black market guns, the store is shipping thousands of dollars worth of weapons daily. It is believed they have two crates of weapons onsite as well as the hardware to run their own online weapons marketplace. You are being tasked with taking down the operation. You must take down the online weapon marketplace and take control of both weapons crates.
 
-    Additionally, it is believed Hexfall has a small infrastructure of computers. But, due to the sensitive nature of their network, it cannot be moved until the website is disabled. Therefore, you will be tasked with taking Hexfall's website offline on location.
-
     To do this it is believed Hexfall's lead hacker has a flash drive where he stores the passwords to all their computers. You must obtain the flash drive, get the passwords, login to the remote server, and takedown the website.
 
     Your mission is complete when you take down the Hexfall website and take control of both weapons crates.
@@ -64,7 +62,7 @@ Team is briefed with the following or using the presentation found in `Presentat
 
 1. Add to the Rules of Engagement (ROEs): "You must take all causualties back to base to perform any medical treatment." This forces the cadets out of the safety of the newly captured enemy base. This will give more opportunity for OPFOR to attack and will also create a more dynamic and stressful situation.
 2. Turn off the lights in the Hexfall HQ (and add an ROE so they can't turn them back on). This forces them to act in low light and increases the enviromental stressors.
-3. Remove any number of the docs. This will make them have to find the knowledge themselves. CAUTION: this could derail the flow, only do this to competant cadets.
+3. Remove any number of the docs. This will make them have to find the knowledge themselves. CAUTION: this could derail the flow, only do this to technically competant cadets.
 
 ### Docs
 
