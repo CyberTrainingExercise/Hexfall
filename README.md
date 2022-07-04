@@ -4,16 +4,30 @@ Welcome to Operation Hexfall, a Cyber Training Exercise (CTX) designed for AFROT
 
 This CTX was designed to test cadets for leadership competencies in a high intensity simulation. This simulation will be carried out in both the land domain and in the cyber domain.
 
+### Objectives
+
+Skill level (1-5):
+ - 3
+Time: 37 mins
+ - 7 for planning
+ - 30 for execution
+
+Technical Objectives:
+1. Intro to Kali Linux
+2. Intro to brute forcing passwords with John the Ripper
+3. Intro to SSH
+
+### Requirements
+
 If you would like to perform this CTX you will need the following:
 
 1. Someone who is technically skilled to setup the scenario.
     - Hopefully this guide will make it easy, but you still need technical know how to do it.
 2. The following equipment:
     - FTX simulation equipment such as rubber duckies.
-    - A computer or virtual machine.
+    - A computer or virtual machine capable of running Kali Linux.
+    - A computer or virtual machine capable of running a Tor hidden service.
     - A USB stick.
-    - A headless server.
-    - Optional: a phone with the tor browser installed.
 
 ### Expected Design
 
@@ -29,34 +43,39 @@ The CTX admin, whoever is administering it, will be tasked with augmenting it to
 
 Augment the scenario as you see fit.
 
-### Objectives
+### Scenario
 
-For: POC
-Time: 37 mins
- - 7 for planning
- - 30 for execution
+Team is briefed with the following or using the presentation found in `Presentation/`':
 
-Technical Objectives:
-1. Intro to Kali Linux
-2. Intro to brute forcing passwords
-3. Intro to SSH
+    Intel has located a nefarious hacking group, known only as Hexfall, in a nearby facility. Hexfall was brought to the the governments attention after they opened an online weapons marketplace. Due to increasing demand of black market guns, the store is shipping thousands of dollars worth of weapons daily. It is believed they have two crates of weapons onsite as well as the hardware to run their own online weapons marketplace. You are being tasked with taking down the operation. You must take down the online weapon marketplace and take control of both weapons crates.
 
-Tools:
-1. Kali linux box
-2. USB stick
-3. Headless server with SSH port open
-4. Optional: LED lights
-5. Optional: a phone with the tor browser installed
-    - You can find other ways to have them verify the website is up and running, but this is the recommended way
+    Additionally, it is believed Hexfall has a small infrastructure of computers. But, due to the sensitive nature of their network, it cannot be moved until the website is disabled. Therefore, you will be tasked with taking Hexfall's website offline on location.
+
+    To do this it is believed Hexfall's lead hacker has a flash drive where he stores the passwords to all their computers. You must obtain the flash drive, get the passwords, login to the remote server, and takedown the website.
+
+    Your mission is complete when you take down the Hexfall website and take control of both weapons crates.
+
+    Below is a list of helpful guides a technical specialist has prepared for you.
+
+
+### Docs
+
+Print out the following and hand the useful information to them:
+
+1. Crack a password protected file: https://linuxconfig.org/how-to-crack-zip-password-on-kali-linux
+
+2. Guide on how to SSH into a remote server: https://linuxconfig.org/Ssh
+
+3. Shutting down the server: `systemctl -poweroff`
 
 ### Setup
 
 1. Create a cloud server with an open SSH port and with login credentials as found in `passwords.txt`.
-2. Run a website off of the cloud server.
+2. Run a darknet website off of the cloud server.
     - For this use tor and run a hidden service.
     - See: https://www.youtube.com/watch?v=GVMjk9pj2Cw for instructions on how to run a hidden service.
     - Use `python3 -m http.server --bind 127.0.0.1 8080` to run the web server
-    - If you would like to include the server to run on boot, edit `/etc/rc.local` with `python3 -m http.server --directory /home/pi/Desktop/HexfallWebsite --bind 127.0.0.1 8080 &`
+    - If you would like to include the server to run on boot, edit `/etc/rc.local` with something like `python3 -m http.server --directory /home/pi/Desktop/HexfallWebsite --bind 127.0.0.1 8080 &`
     - Store url to hidden service in `url.txt`
 3. Load a box with Kali linux and connect it to the internet.
     - See: https://www.kali.org/
@@ -74,39 +93,8 @@ Tools:
 11. Execute training exercise!
     - See section `Onsite Setup` below for more details.
 
-### Scenario
-
-Team is briefed with the following or using the presentation found in `Presentation/`':
-
-    Intel has located a nefarious hacking group, known only as Hexfall, in a nearby facility. Hexfall was brought to the the governments attention after they opened an online weapons marketplace. Due to increasing demand of black market guns, the store is shipping thousands of dollars worth of weapons daily. It is believed they have two crates of weapons onsite as well as the hardware to run their own online weapons marketplace. You are being tasked with taking down the operation. You must take down the online weapon marketplace and take control of both weapons crates.
-
-    Additionally, it is believed Hexfall has a small infrastructure of computers. But, due to the sensitive nature of their network, it cannot be moved until the website is disabled. Therefore, you will be tasked with taking Hexfall's website offline on location.
-
-    To do this it is believed Hexfall's lead hacker has a flash drive where he stores the passwords to all their computers. You must obtain the flash drive, get the passwords, login to the remote server, and takedown the website.
-
-    Your mission is complete when you take down the Hexfall website and take control of both weapons crates.
-
-    Below is a list of helpful guides a technical specialist has prepared for you.
-
-Print out the following and hand the useful information to them:
-
-1. Crack a password protected file: https://linuxconfig.org/how-to-crack-zip-password-on-kali-linux
-
-2. Guide on how to SSH into a remote server: https://linuxconfig.org/Ssh
-
-3. Shutting down the server: `systemctl -poweroff`
-
-### Opfor Guidance
-
-Provide moderate resistance in Hexfall HQ shootout.
-
-Provide mild attacks during hacking campaign.
-
-Provide moderate resistance at second crate point.
-
-Provide mild resistance during evacuation.
-
 ### Onsite Setup
+
 1. Plug in Server
 2. Verify website is runing, see `url.txt.` for site url
 3. Verify Server IP address, ssh into `pi@hexfallserver.student.rit.edu`
@@ -116,3 +104,23 @@ Provide mild resistance during evacuation.
 7. Setup presentation and have print outs (and optionally: phone) ready
 8. Present presentation
 9. Hand out print outs and optionally the phone with tor browser installed
+
+### Debrief Ideas
+
+Non-technical questions:
+1. How did you manage splitting up or lack of splitting up?
+1. Did you find the second crate? How did you manage that new objective?
+Technical questions:
+1. How did you juggle Kali's extensive toolkit to exploit the known vulnerabiities?
+1. Was there any technical rabbit trails you went down during the CTX?
+
+
+### Misc: Opfor Guidance
+
+Provide moderate resistance in Hexfall HQ shootout.
+
+Provide mild attacks during hacking campaign.
+
+Provide moderate resistance at second crate point.
+
+Provide mild resistance during evacuation.
