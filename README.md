@@ -1,6 +1,6 @@
 # CTX0 - Operation Hexfall
 
-Welcome to Operation Hexfall, a Cyber Training Exercise (CTX) designed for AFROTC cadets.
+Welcome to Operation Hexfall, a Cyber Training Exercise (CTX) designed for i5 cadets.
 
 This CTX was designed to test cadets for leadership competencies in a high intensity simulation. This simulation will be carried out in both the land domain and in the cyber domain.
 
@@ -16,13 +16,16 @@ Technical Objectives:
 1. Intro to Kali Linux
 2. Intro to brute forcing passwords with John the Ripper
 3. Intro to SSH
+4. Intro to Tor
 
 ### Requirements
 
 If you would like to perform this CTX you will need the following:
 
-1. Someone who is technically skilled to setup the scenario.
+1. An Admin who is technically skilled to setup the scenario.
     - Hopefully this guide will make it easy, but you still need technical know how to do it.
+    - Required skills:
+        - Linux, SSH, John the Ripper, Tor, Webservers 
 2. The following equipment:
     - FTX simulation equipment such as rubber duckies.
     - A computer or virtual machine capable of running Kali Linux.
@@ -31,15 +34,14 @@ If you would like to perform this CTX you will need the following:
 
 ### Expected Design
 
-The CTX is designed such that the leader will have to balance both domains simultaneously. The land domain will have sporadic action while the cyber domain will remain more stable, with one main path to completion.
+The CTX is designed such that the Leader will have to balance both domains simultaneously. The land domain will have sporadic action while the cyber domain will remain more stable, with one main path to completion.
 
-The CTX admin, whoever is administering it, will be tasked with augmenting it to fit their specific location. The situtational diagram found in `SituationalDiagram_Det538` is designed specifically for Detachment 538 and their available space. When you augment the scenario, please keep the following in mind:
+The Admin will be tasked with augmenting it to fit their specific location. The situtational diagram found in `SituationalDiagram_Det538` is designed specifically for Detachment 538 and their available space. When you augment the scenario, please keep the following in mind:
 
 1. The cyber domain should be as easy to complete as possible, while still retaining the wow factor of taking down a darknet website.
     - Let them feel like they're flying, but make sure they don't crash
 2. The land domain should be sporadic, incorporate additional measures to challenge them constantly.
-    - An example of a way to do this is adding to the Rules of Engagement (ROEs): "You must take all causualties back to base to perform any medical treatment." This forces the cadets out of the safety of the newly captured enemy base. This will give more opportunity for OPFOR to attack and will also create a more dynamic and stressful situation.
-    - Another example would be to turn off the lights in the Hexfall HQ (and add an ROE so they can't turn them back on). This forces them to act in low light and increases the enviromental stressors.
+    - Don't break them, but keep them challenged and engaged.
 
 Augment the scenario as you see fit.
 
@@ -58,9 +60,15 @@ Team is briefed with the following or using the presentation found in `Presentat
     Below is a list of helpful guides a technical specialist has prepared for you.
 
 
+### Difficulty Dials
+
+1. Add to the Rules of Engagement (ROEs): "You must take all causualties back to base to perform any medical treatment." This forces the cadets out of the safety of the newly captured enemy base. This will give more opportunity for OPFOR to attack and will also create a more dynamic and stressful situation.
+2. Turn off the lights in the Hexfall HQ (and add an ROE so they can't turn them back on). This forces them to act in low light and increases the enviromental stressors.
+3. Remove any number of the docs. This will make them have to find the knowledge themselves. CAUTION: this could derail the flow, only do this to competant cadets.
+
 ### Docs
 
-Print out the following and hand the useful information to them:
+Print out the following and hand the useful information to the Leader:
 
 1. Crack a password protected file: https://linuxconfig.org/how-to-crack-zip-password-on-kali-linux
 
@@ -110,9 +118,14 @@ Print out the following and hand the useful information to them:
 Non-technical questions:
 1. How did you manage splitting up or lack of splitting up?
 1. Did you find the second crate? How did you manage that new objective?
+
 Technical questions:
 1. How did you juggle Kali's extensive toolkit to exploit the known vulnerabiities?
 1. Was there any technical rabbit trails you went down during the CTX?
+
+Additional thoughts:
+1. Let them know that the CTX is based on real world scenarios and used real world software.
+    - They just took down a legit dark net website, that's pretty cool
 
 
 ### Misc: Opfor Guidance
