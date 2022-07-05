@@ -8,6 +8,7 @@ This CTX was designed to test cadets for leadership competencies in a high inten
 
 Skill level (1-5):
  - 3
+
 Time: 37 mins
  - 7 for planning
  - 30 for execution
