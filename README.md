@@ -10,9 +10,9 @@ Estimated skills (see [skill levels](https://github.com/CyberTrainingExercise/Do
 - Programming skills required (0-3)
     - 0
 - System adminitration skills required (0-3)
-    - 2
+    - 1
 - Pentesting skills required (0-3)
-    - 2
+    - 1
 
 Total time: 35 mins
  - 5 for planning
