@@ -6,11 +6,16 @@ This CTX was designed to test cadets for leadership competencies in a high inten
 
 ### Objectives
 
-Skill level (1-5):
- - 3
+Estimated skills (see [skill levels](https://github.com/CyberTrainingExercise/Docs/blob/master/ctx_requirements.md) for meaning)
+- Programming skills required (0-3)
+    - 0
+- System adminitration skills required (0-3)
+    - 2
+- Pentesting skills required (0-3)
+    - 2
 
-Time: 37 mins
- - 7 for planning
+Total time: 35 mins
+ - 5 for planning
  - 30 for execution
 
 Technical Objectives:
