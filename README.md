@@ -82,7 +82,21 @@ Print out the following and hand the useful information to the Leader:
 
 ### Setup
 
-1. Create a cloud server with an open SSH port and with login credentials as found in `passwords.txt`.
+With Docker (RECOMMENDED):
+
+1. Build the Docker container: `sudo docker build . -t hexfall`
+1. Run the Docker container: `sudo docker run -p 8000:8000 8080:8080 --name hexfall hexfall`
+    - This will publish the .onion address to port 8000 and will use port
+    8080 for the Tor hidden service.
+1. Visit `ip:8000` and click on `hostname.txt`
+    - Now copy this .onion address and visit it with the Tor browser.
+1. Verify that the Hexfall site is working.
+1. Stop the Docker container: `sudo docker stop hexfall`
+
+
+Without Docker (NOT RECOMMENDED):
+
+1. Create a server with an open SSH port and with login credentials as found in `passwords.txt`.
 2. Run a darknet website off of the cloud server.
     - For this use tor and run a hidden service.
     - See: https://www.youtube.com/watch?v=GVMjk9pj2Cw for instructions on how to run a hidden service.
