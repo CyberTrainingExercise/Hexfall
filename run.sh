@@ -5,7 +5,8 @@ service tor start
 cd /onion
 echo "Running web server for .onion address on port 8000"
 python3 -m http.server 8000 &
-sleep 1
+echo "Starting SSH service on port 8022"
+/etc/init.d/ssh restart
 cp /var/lib/tor/hidden_service/hostname /onion/hostname.txt
 cd /hexfall
 echo "Running web server for Tor hidden service"

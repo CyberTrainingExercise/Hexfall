@@ -85,56 +85,62 @@ Print out the following and hand the useful information to the Leader:
 With Docker (RECOMMENDED):
 
 1. Build the Docker container: `sudo docker build . -t hexfall`
-1. Run the Docker container: `sudo docker run -p 8000:8000 8080:8080 --name hexfall hexfall`
+1. Run the Docker container: `sudo docker run -p 8000:8000 -p 8080:8080 -p 22:22 --name hexfall hexfall`
     - This will publish the .onion address to port 8000 and will use port
     8080 for the Tor hidden service.
 1. Visit `ip:8000` and click on `hostname.txt`
-    - Now copy this .onion address and visit it with the Tor browser.
+    - Now copy this .onion address and visit it with the Tor browser (this may take a few minutes to get going on the first run).
 1. Verify that the Hexfall site is working.
+1. Verify that ssh to the Docker container is working: `TODO`
+    - If it fails, you may need to add firewall exception rules to the host machine.
+        - On Ubuntu if you use UFW, use: `sudo ufw allow ssh`
 1. Stop the Docker container: `sudo docker stop hexfall`
 
 
 Without Docker (NOT RECOMMENDED):
 
-1. Create a server with an open SSH port and with login credentials as found in `passwords.txt`.
-2. Run a darknet website off of the cloud server.
+1. Create a Linux server with an open SSH port and with login credentials as found in `passwords.txt`.
+2. Run a darknet website off of the server.
     - For this use tor and run a hidden service.
     - See: https://www.youtube.com/watch?v=GVMjk9pj2Cw for instructions on how to run a hidden service.
     - Use `python3 -m http.server --bind 127.0.0.1 8080` to run the web server
     - If you would like to include the server to run on boot, edit `/etc/rc.local` with something like `python3 -m http.server --directory /home/pi/Desktop/HexfallWebsite --bind 127.0.0.1 8080 &`
-    - Store url to hidden service in `url.txt`
-3. Load a box with Kali linux and connect it to the internet.
+
+1. Load a box with Kali linux and connect it to the internet.
     - See: https://www.kali.org/
-4. Load a USB stick with the cloud server login credentials and location of the second weapons create (see step 8).
-5. Encrypt the file with the credentials found in `passwords.txt`.
+1. Load a USB stick with the server login credentials (ip address, username, and password) and location of the second weapons create (see step 8).
+1. Encrypt the file with the credentials found in `passwords.txt`.
     - Use `zip -e secret_files.zip data.txt`
     - The password `elemen` is a good option as it takes John The Ripper about a minute to process (depending on hardware).
-6. Put the Kali box and USB stick in Hexfall HQ as described below.
-7. Put a weapons crate in the Hexfall HQ.
-8. Put a weapons crate in a secret secondary location.
+1. Put the Kali box and USB stick in Hexfall HQ as described below.
+1. Put a weapons crate in the Hexfall HQ.
+1. Put a weapons crate in a secret secondary location.
     - Record this location and put it into the `secret_files.zip` in step 5.
-9. Update presentation in `Presentation/` with details for your specific scenario.
-10. Print out print outs found in `PrintOuts/`
+1. Update presentation in `Presentation/` with details for your specific scenario.
+1. (OPTIONAL) Print out print outs found in `PrintOuts/`
     - You do not need all the pages, but read them over and select which ones you think the cadets would need. For example, the `HowToCrackPasswords` document should only need to be page 5.
-11. Execute training exercise!
+        - In the future this will hopefully be made into nice training documents, right now it's just downloaded webpages.
+1. Execute training exercise!
     - See section `Onsite Setup` below for more details.
 
 ### Onsite Setup
 
-1. Plug in Server
-2. Verify website is runing, see `url.txt.` for site url
-3. Verify Server IP address, ssh into `pi@hexfallserver.student.rit.edu`
+1. Plug in the server and run the Docker container (or run manually if you didn't use Docker)
+2. Verify Darknet website is running
+    - If using Docker, checkout `server_ip:8000` for the Tor .onion address
+3. Verify server SSH `ssh root@server_ip`
 4. Get IP address
 5. Load IP address and weapon crate (#2) location onto zip file `zip -e secret_files.zip file1.txt`
-6. Setup Kali box and optional LED lights
-7. Setup presentation and have print outs (and optionally: phone) ready
+6. Setup Kali box
+7. Setup presentation and have print outs ready
 8. Present presentation
-9. Hand out print outs and optionally the phone with tor browser installed
+9. Hand out print outs
+    - OPTIONAL: Hand out some device with Tor installed
 
 ### Debrief Ideas
 
 Non-technical questions:
-1. How did you manage splitting up or lack of splitting up?
+1. How did you manage splitting up up your team or not splitting up your team? What led you to choose either option?
 1. Did you find the second crate? How did you manage that new objective?
 
 Technical questions:
