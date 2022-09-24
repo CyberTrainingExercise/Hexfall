@@ -84,14 +84,19 @@ Print out the following and hand the useful information to the Leader:
 
 With Docker (RECOMMENDED):
 
+1. Generate the authorized_keys file.
+    1. On the Participant's machine generate an SSH key by running `ssh-keygen`
+        - Press enter to all defaults
+    1. This public key is required for SSH authentication and will need to be copied into the Docker container.
+        - Copy the public key on the Kali host (`~/.ssh/id_rsa.pub`) and paste it into a file named `authorized_keys` in the root directory of this repo on the Admin's host. Docker is looking for a file in this location to pull into the Docker container.
 1. Build the Docker container: `sudo docker build . -t hexfall`
-1. Run the Docker container: `sudo docker run -p 8000:8000 -p 8080:8080 -p 22:22 --name hexfall hexfall`
-    - This will publish the .onion address to port 8000 and will use port
-    8080 for the Tor hidden service.
+1. Run the Docker container: `sudo docker run -p 8000:8000 -p 8080:8080 -p 8022:22 --name hexfall hexfall`
+    - This will publish the .onion address to port 8000, will use port 8080 for the Tor hidden service and port 8022 for SSH.
+    - Depending on hardware, this command may take a few dozen seconds to properly load everything.
 1. Visit `ip:8000` and click on `hostname.txt`
     - Now copy this .onion address and visit it with the Tor browser (this may take a few minutes to get going on the first run).
 1. Verify that the Hexfall site is working.
-1. Verify that ssh to the Docker container is working: `TODO`
+1. Verify that ssh to the Docker container is working: `ssh admin@ip -p 8022`
     - If it fails, you may need to add firewall exception rules to the host machine.
         - On Ubuntu if you use UFW, use: `sudo ufw allow ssh`
 1. Stop the Docker container: `sudo docker stop hexfall`
