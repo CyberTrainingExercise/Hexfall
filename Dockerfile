@@ -15,10 +15,6 @@ RUN echo "HiddenServicePort 80 127.0.0.1:8080" >> /etc/tor/torrc
 COPY run.sh /onion/run.sh
 COPY index.html /onion/index.html
 
-# RUN groupadd sshgroup && useradd -ms /bin/bash -g sshgroup admin
-# RUN mkdir -p /home/admin/.ssh
-
-
 # # Add the admin user with password openup11
 RUN groupadd sshgroup && useradd -ms /bin/bash -g sshgroup admin
 RUN usermod -p open admin
@@ -26,7 +22,6 @@ RUN mkdir -p /home/admin/.ssh
 # If the below line fails, please generate an authorized key
 COPY authorized_keys /home/admin/.ssh/authorized_keys
 RUN chown admin:sshgroup /home/admin/.ssh/authorized_keys && chmod 600 /home/admin/.ssh/authorized_keys
-# USER admin
 
 # Expose ports and set the entrypoint to the run script
 EXPOSE 8080 8000 8022 80
