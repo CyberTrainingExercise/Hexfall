@@ -101,6 +101,10 @@ With Docker (RECOMMENDED):
         - On Ubuntu if you use UFW, use: `sudo ufw allow ssh`
 1. Stop the Docker container: `sudo docker stop hexfall`
 
+The following system diagram may be helpful:
+
+![image](SystemDiagram.drawio.png)
+
 
 Without Docker (NOT RECOMMENDED):
 
