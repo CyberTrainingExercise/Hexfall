@@ -2,6 +2,8 @@
 
 Welcome to Operation Hexfall, a Cyber Training Exercise (CTX) designed for i5 cadets.
 
+Hexfall, a darknet seller of black market guns, has been located in a nearby facility. Your team must raid their base, take down their darknet market, and retrieve any illegal weapons.
+
 This CTX was designed to test cadets for leadership competencies in a high intensity simulation. This simulation will be carried out in both the land domain and in the cyber domain.
 
 ### Objectives
